@@ -1,52 +1,57 @@
 # Predicting Troop Betrayal in the War
 
-## Problem Overview
+<p align="center">
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge" />
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge" />
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge" />
+  <img alt="Machine Learning" src="https://img.shields.io/badge/Machine%20Learning-102230?style=for-the-badge" />
+  <img alt="Data Science" src="https://img.shields.io/badge/Data%20Science-1F77B4?style=for-the-badge" />
+</p>
 
-In the ongoing conflict against the Phrygians, predicting troop betrayal is critical for ensuring the loyalty and effectiveness of our forces. The goal of this project is to develop a predictive system that can identify soldiers at risk of defecting to the enemy. This system uses a combination of social, psychological, and economic factors to assess the likelihood of betrayal and provide commanders with actionable insights.
+<p align="center">
+  <strong>A data-science challenge solution for predicting strategic betrayal risk from structured wartime data.</strong>
+</p>
 
-### Key Factors Considered:
-1. **Greed Index**: Measures the soldier’s susceptibility to offers of wealth.
-2. **Loyalty History**: Tracks past behaviors and incidents of desertion or disobedience.
-3. **Peer Influence**: Assesses the strength of relationships with defected or questionable individuals.
-4. **Discontent Level**: Gauges morale through surveys and interviews.
-5. **Temptation Score**: Accounts for external offers from the enemy.
-6. **Respect and Recognition**: Evaluates the soldier’s rank and perceived value within the army.
-7. **Risk Attitude**: Determines whether the soldier is more risk-averse or risk-seeking.
+Innov8 is a notebook-driven analytical project that models betrayal prediction as a structured machine learning problem. It includes data, solution notebooks, outputs, and a written report for communicating approach and results.
 
-### Data Collection Methods:
-- **Surveys and Interviews**: Collect qualitative data on loyalty and morale.
-- **Historical Data**: Analyze past behavior of soldiers with similar traits.
-- **Real-time Monitoring**: Track morale and social interactions continuously.
+## Core Capabilities
 
-## Machine Learning Solution
+- Explores and models structured challenge data.
+- Builds prediction workflows across multiple solution notebooks.
+- Produces result artifacts for submission or evaluation.
+- Includes a report summarizing problem framing and solution strategy.
 
-The project leverages machine learning to classify soldiers as either potential defectors or loyalists. The primary steps are:
+## Technical Architecture
 
-1. **Data Preprocessing**: Normalize and standardize the data.
-2. **Feature Engineering**: Score each feature (e.g., Greed Index, Discontent Level) based on its contribution to betrayal risk.
-3. **Model Selection**: Utilize classification models such as Logistic Regression, Decision Trees, or Random Forests.
-4. **Model Training**: Train the model using historical data of both loyal soldiers and defectors.
-5. **Evaluation**: Use accuracy, precision, recall, and F1-score to measure performance.
+The repository is organized around notebook experimentation and output artifacts. Data files feed the solution notebooks, which generate predictions and support the project report.
 
-### Workflow:
-1. **Input Data**: Feed new soldier data into the system.
-2. **Prediction**: The model generates a betrayal risk score.
-3. **Ranking**: Soldiers are ranked based on the likelihood of betrayal.
-4. **Feedback Loop**: Real-time data from the field is continuously fed back into the system for refinement.
+## Technology Stack
 
-## Tools and Technologies
+- Jupyter notebooks for experimentation and explanation.
+- Python data-science workflow with tabular data handling.
+- CSV artifacts for input and result output.
+- PDF report for formal project communication.
 
-- **Python**: Primary language for data processing and model implementation.
-- **Pandas**: For data handling and manipulation.
-- **Scikit-learn**: For building and training the predictive models.
-- **Jupyter Notebook**: For interactive data analysis and model development.
+## Repository Structure
 
-## Jupyter Notebook Overview
+- `solution.ipynb` - Primary solution notebook.
+- `part2_solution.ipynb` - Secondary solution workflow.
+- `part_2_data.csv` - Challenge data artifact.
+- `result.csv` - Prediction output.
+- `Predicting Troop Betrayal in the War.pdf` - Project report.
 
-The solution provided in the Jupyter notebook (`part2_solution.ipynb`) includes the following sections:
+## Getting Started
 
-1. **Data Loading and Preprocessing**: Loading the data, handling missing values, and normalizing the features.
-2. **Feature Engineering**: Scoring features like Greed Index, Loyalty History, etc.
-3. **Model Training**: Training a classification model (Random Forest) using historical soldier data.
-4. **Model Evaluation**: Evaluating the performance of the trained model using test data.
-5. **Prediction and Risk Scoring**: Predicting the betrayal risk for new soldiers and generating a betrayal likelihood ranking.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+```
+
+```bash
+jupyter notebook
+```
+
+## Professional Context
+
+This project demonstrates applied predictive modeling, challenge communication, and reproducible notebook-based analysis.
