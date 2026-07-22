@@ -25,6 +25,18 @@ Innov8 is a notebook-driven analytical project that models betrayal prediction a
 
 The repository is organized around notebook experimentation and output artifacts. Data files feed the solution notebooks, which generate predictions and support the project report.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Data["Challenge Dataset"] --> Notebook["Solution Notebooks"]
+  Notebook --> EDA["Data Exploration"]
+  EDA --> Features["Feature Engineering"]
+  Features --> Model["Prediction Model"]
+  Model --> Results["result.csv"]
+  Results --> Report["Project Report"]
+```
+
 ## Technology Stack
 
 - Jupyter notebooks for experimentation and explanation.
